@@ -5,6 +5,11 @@
 //  Created by Emma Walker - TVandMobile Platforms - Core Engineering on 02/09/2022.
 //
 
+// the # - here as #import is a preprocessor directive
+// this means the code will get replaced by the preprocessor before the code gets built.
+// here specifically the directive means “find the header file for Foundation (Apple’s fundamental Objective-C framework), and paste it here.”
+// this is similar to the #include directive in C, C++
+// however is subtley different as #import means it will only ever be included once 
 #import <Foundation/Foundation.h>
 
 // this is a function declaration in C.
