@@ -21,6 +21,18 @@
 int main(int argc, const char * argv[]) {
     // @autoreleasepool signals to the compiler that you are going to be allocating lots of memory; and when I’m finished, please free it up.
     @autoreleasepool {
+        
+        int i = 10;
+        
+        // the * signifies a pointer
+        // it is a reference to a location in memory rather where data lives rather than the data itself
+        // in objc all objects must be pointers
+        // here the object is an NSString (Capital N)
+        // str isn't a string - it's a pointer to were an NSString object lives in memory
+        NSString *str = @"Reject common sense to make the impossible possible!";
+        
+        NSArray *array = @[@"Hello", @"World"];
+        
         // the "@" symbol indicates "this next bit is objective-C"
         // without the "@" this would be interpreted as a C string - an array of characters in ASCII, ending with a 0.
         NSLog(@"Hello, World!");
